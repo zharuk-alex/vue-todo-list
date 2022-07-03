@@ -6,11 +6,11 @@
     </template>
     <template #header-top-right>
       <v-chip class="ma-2" small>Tasks {{ tasks.length }}</v-chip>
-      <v-chip class="ma-2" small color="success">Done {{ doned }}</v-chip>
+      <v-chip class="ma-2" small color="success">Done {{ doneTasks }}</v-chip>
     </template>
     <template #header-sub>
       <v-text-field
-        v-model="newTask"
+        v-model.trim="newTask"
         class="input-field-task ma-0 pa-0"
         prepend-inner-icon="mdi-plus"
         placeholder="Type your task and Press enter"
@@ -70,9 +70,6 @@
           });
           return val;
         },
-      },
-      doned() {
-        return Object.values(this.tasksmodel).length;
       },
       day() {
         return moment().format('dddd') + ', ' + moment().format('Do');
