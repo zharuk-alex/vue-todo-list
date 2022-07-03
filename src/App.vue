@@ -1,19 +1,17 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+  <v-app>
+    <v-main>
+      <HomeContent />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-  body {
-    height: 100%;
-  }
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    background-color: #5a5ee8;
-  }
-</style>
+<script>
+  import HomeContent from './components/HomeContent.vue';
+  export default {
+    name: 'App',
+    components: {
+      HomeContent,
+    },
+  };
+</script>
