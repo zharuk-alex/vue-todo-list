@@ -29,7 +29,7 @@
           padless
           class="d-flex py-3 mt-auto justify-center"
         >
-          <span class="font-weight-bold"> created by zzharuk </span>
+          <span class="font-weight-bold"> created by zharuk-alex </span>
         </v-footer>
       </v-card>
     </main>
@@ -37,71 +37,71 @@
 </template>
 
 <script>
-export default {
-  name: "DefaultLayout",
-};
+  export default {
+    name: 'DefaultLayout',
+  };
 </script>
 
-<style lang="scss" >
-main {
-  max-width: 500px;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.card-body-wrapper {
-  overflow: auto;
-  &::-webkit-scrollbar {
-    width: 10px;
+<style lang="scss">
+  main {
+    max-width: 500px;
+    height: 100vh;
+    margin: 0 auto;
   }
 
-  &::-webkit-scrollbar-track {
-    background-color: #cfcfcd;
-  }
+  .card-body-wrapper {
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-  }
-}
-$base-grey-color: #a8a9ca;
+    &::-webkit-scrollbar-track {
+      background-color: #cfcfcd;
+    }
 
-header {
-  background: linear-gradient(to bottom, #fff, #fafaff);
-  border-bottom: 1px solid #e0e9f1;
-  .header-top {
-    padding: 30px;
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+    }
+  }
+  $base-grey-color: #a8a9ca;
+
+  header {
+    background: linear-gradient(to bottom, #fff, #fafaff);
     border-bottom: 1px solid #e0e9f1;
-  }
-  .header-top-left {
-    .day {
-      font-size: 30px;
-      color: #666afb;
-      letter-spacing: 0.8;
+    .header-top {
+      padding: 30px;
+      border-bottom: 1px solid #e0e9f1;
     }
-    .month {
-      display: block;
-      margin-top: 15px;
+    .header-top-left {
+      .day {
+        font-size: 30px;
+        color: #666afb;
+        letter-spacing: 0.8;
+      }
+      .month {
+        display: block;
+        margin-top: 15px;
+        font-size: 20px;
+        color: $base-grey-color;
+        letter-spacing: 0.4;
+      }
+    }
+
+    .input-field-task .v-input__slot {
+      padding: 18px;
       font-size: 20px;
-      color: $base-grey-color;
-      letter-spacing: 0.4;
+      .v-input__prepend-inner .v-icon {
+        color: $base-grey-color;
+        font-size: 34px;
+      }
+      .v-input__icon--prepend-inner {
+        margin-right: 22px;
+      }
+
+      &::before {
+        border-color: $base-grey-color !important;
+        border-width: 2px 0 0 0;
+      }
     }
   }
-
-  .input-field-task .v-input__slot {
-    padding: 18px;
-    font-size: 20px;
-    .v-input__prepend-inner .v-icon {
-      color: $base-grey-color;
-      font-size: 34px;
-    }
-    .v-input__icon--prepend-inner {
-      margin-right: 22px;
-    }
-
-    &::before {
-      border-color: $base-grey-color !important;
-      border-width: 2px 0 0 0;
-    }
-  }
-}
 </style>
