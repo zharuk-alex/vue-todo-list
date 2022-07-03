@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <main class="flex-fill d-flex flex-column py-5">
+    <div class="card-wrapper flex-fill d-flex flex-column">
       <v-card
         class="d-flex flex-column"
         style="height: calc(100vh - 24px); overflow: hidden"
@@ -32,7 +32,7 @@
           <span class="font-weight-bold"> created by zharuk-alex </span>
         </v-footer>
       </v-card>
-    </main>
+    </div>
   </v-container>
 </template>
 
@@ -43,7 +43,7 @@
 </script>
 
 <style lang="scss">
-  main {
+  .card-wrapper {
     max-width: 500px;
     height: 100vh;
     margin: 0 auto;

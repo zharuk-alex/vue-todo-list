@@ -15,3 +15,11 @@
     },
   };
 </script>
+<style>
+  body {
+    overflow: hidden;
+  }
+  .v-application--wrap {
+    background-color: #666afb;
+  }
+</style>
